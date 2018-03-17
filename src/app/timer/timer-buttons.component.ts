@@ -1,8 +1,9 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
+
 import {TimerService} from '../timer.service';
 
 @Component({
-  selector: 'app-buttons',
+  selector: 'app-timer-buttons',
   template: `
     <div class="col btns">
       <button class="btn" [ngClass]="{ 'btn-success' : !play, 'btn-danger' : play }"
@@ -18,7 +19,7 @@ import {TimerService} from '../timer.service';
     }
   `]
 })
-export class ButtonsComponent implements OnInit, OnDestroy {
+export class TimerButtonsComponent implements OnInit, OnDestroy {
 
   private timerCurrentStatus: any;
   private play: boolean;

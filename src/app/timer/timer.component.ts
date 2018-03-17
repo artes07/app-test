@@ -1,5 +1,6 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 import {Observable, Subscription} from 'rxjs/Rx';
+
 import {TimerService} from '../timer.service';
 
 @Component({
